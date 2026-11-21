@@ -1,0 +1,89 @@
+{
+  "dataset": {
+    "train_rows": 192196,
+    "test_rows": 48050,
+    "malicious": 109401,
+    "benign": 130845,
+    "n_features": 25010
+  },
+  "models": {
+    "svm": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          26169,
+          0
+        ],
+        [
+          0,
+          21881
+        ]
+      ],
+      "train_seconds": 12.0,
+      "per_category": {
+        "Union-based": 1.0,
+        "Boolean-based": 1.0,
+        "Error-based": 1.0,
+        "Time-based": 1.0,
+        "Other": 1.0,
+        "Benign": 1.0
+      }
+    },
+    "xgboost": {
+      "accuracy": 0.9999791883454735,
+      "precision": 0.9999543003381774,
+      "recall": 1.0,
+      "f1": 0.999977149646962,
+      "roc_auc": 0.999999998253592,
+      "confusion_matrix": [
+        [
+          26168,
+          1
+        ],
+        [
+          0,
+          21881
+        ]
+      ],
+      "train_seconds": 415.2,
+      "per_category": {
+        "Union-based": 1.0,
+        "Boolean-based": 1.0,
+        "Error-based": 1.0,
+        "Time-based": 1.0,
+        "Other": 1.0,
+        "Benign": 0.9999617868470327
+      }
+    },
+    "mlp": {
+      "accuracy": 0.9999791883454735,
+      "precision": 1.0,
+      "recall": 0.999954298249623,
+      "f1": 0.9999771486026371,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          26169,
+          0
+        ],
+        [
+          1,
+          21880
+        ]
+      ],
+      "train_seconds": 394.4,
+      "per_category": {
+        "Union-based": 1.0,
+        "Boolean-based": 0.999771324033844,
+        "Error-based": 1.0,
+        "Time-based": 1.0,
+        "Other": 1.0,
+        "Benign": 1.0
+      }
+    }
+  }
+}
